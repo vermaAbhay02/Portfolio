@@ -6,6 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 a{
     color: blue;
     animation: colorchange 5s infinite alternate ; 
@@ -34,8 +35,7 @@ nav {
     padding: 0 40px;
     align-items: center;
     height: 50px;
-    font-family: 'Montserrat', serif;
-    font-size: 21px;
+    font-family: "Roboto Mono", monospace;    font-size: 21px;
     font-weight: 600;
 
 }
@@ -51,6 +51,22 @@ nav {
 .nav-link:hover {
     background-color: #ebebf8;
 }
+/* #mode{
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(247, 238, 238);
+    border: 2px solid #f9620425;
+    background-color: #05645a9c;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+#mode:hover{
+    background-color: rgb(249, 248, 248);
+    color: #047e76a3;
+    border: 2px solid #04f9e0;
+} */
 
 li {
     display: inline;
@@ -70,23 +86,18 @@ li {
     display: flex;
     width: 100%;
     height: 500px;
-    padding: 20px 10% 0px;
-    background-color: #d6d3d3;
+    padding: 20px 5% 0px;
+    background-color: #d3d3d6;
     justify-content: center;
     align-items: center;
-}
-
-.profimg {
-    border-radius: 30px;
-    background-color: #a2a2e8;
-    padding: 20px;
-    box-shadow: 0px 0px 10px 0px #6565ab;
-
+    column-gap: 5%;
 
 }
+
 
 .person-img {
     height: 400px;
+    border-radius: 50%;
 }
 
 .introcont {
@@ -94,13 +105,13 @@ li {
     width: 60%;
     flex-direction: column;
     row-gap: 20px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 8%;
+    font-family: "Roboto Mono", monospace; 
+    padding: 7%;
 
 }
 
 .t1 {
-    font-size: 50px;
+    font-size: 19px;
 }
 
 .t2 {
@@ -110,6 +121,18 @@ li {
 }
 .desc {
     font-size: 30px;
+}
+.leetcode{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.leet-img{
+    height: 60px;
+    width: 65px;
+    padding: 10px;
 }
 
 /* Skills */
@@ -124,8 +147,7 @@ li {
 
 .skill-head {
     font-size: 45px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: "Roboto Mono", monospace;    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,13 +155,12 @@ li {
 
 .underline {
     width: 200px;
-    height: 7px;
+    height: 5px;
     background-color: black;
 }
 
 .skills {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: "Roboto Mono", monospace;    font-size: 20px;
     display: flex;
     justify-content: space-between;
     row-gap: 50px;
@@ -187,8 +208,7 @@ li {
 
 .project-heading {
     font-size: 40px;
-    font-family: 'Montserrat', 'sans-serif';
-
+    font-family: "Roboto Mono", monospace;
 }
 
 .project-details {
@@ -224,14 +244,12 @@ li {
     font-size: 30px;
     font-weight: 600;
     padding-top: 10px;
-    font-family: 'MONTSERRAT', 'sans-serif';
-}
+    font-family: "Roboto Mono", monospace;}
 
 .project-link {
     cursor: pointer;
     font-size: 18px;
-    font-family: 'Montserrat', 'sans-serif';
-    text-decoration: none;
+    font-family: "Roboto Mono", monospace;    text-decoration: none;
     color: rgb(249, 248, 248);
     border: 2px solid #f9620425;
     background-color: #04f9e02e;
@@ -252,14 +270,13 @@ li {
     width: 100%;
     background-color: #d3d3d3;
     padding: 40px 10%;
-
+    font-family: "Roboto Mono", monospace; 
 
 }
 
 .edu-heading {
     font-size: 40px;
     font-weight: 601;
-    font-family: 'Montserrat', 'sans-serif';
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -269,7 +286,7 @@ li {
 
 .edu-underline {
     width: 450px;
-    height: 7px;
+    height: 5px;
     background-color: black;
 
 }
@@ -294,25 +311,21 @@ li {
 .edu {
     font-size: 25px;
     font-weight: 600;
-    font-family: 'Montserrat', 'sans-serif';
 }
 
 .edu-content {
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Montserrat', 'sans-serif';
 }
 
 .edu-date {
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Montserrat', 'sans-serif';
 }
 
 .marks {
     font-size: 17px;
     font-weight: 500;
-    font-family: 'Montserrat', 'sans-serif';
 }
 
 /* Contact Section */
@@ -322,13 +335,13 @@ li {
     padding: 80px 10% 0px 10%;
     height: 500px;
     border: 2px solid #50509e;
+    font-family: "Roboto Mono", monospace;
 
 }
 
 .contact-head {
     font-size: 40px;
     font-weight: 601;
-    font-family: 'Montserrat', 'sans-serif';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -337,7 +350,7 @@ li {
 
 .contact-underline {
     width: 400px;
-    height: 7px;
+    height: 5px;
     background-color: black;
 
 }
@@ -364,7 +377,6 @@ li {
 .social-link {
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Montserrat', 'sans-serif';
     text-decoration: none;
 }
 
